@@ -1,9 +1,9 @@
 puts "Hello gamers!"
 puts "Choose your weapon!"
-#choice=gets.chomp
-#puts choice
-choices=["Rock", "Paper", "Scissors"]
-#puts choices[1]
-#puts choices[rand(choices.length)]
-pc_choice=choices.sample 
-puts pc_choice
+#read user choice
+user_move = gets.chomp
+#define choices
+possible_moves = ["Rock", "Paper", "Scissors"]
+#random pc answer
+computer_move = possible_moves.sample 
+puts computer_move
