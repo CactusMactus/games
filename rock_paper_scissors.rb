@@ -1,8 +1,8 @@
 puts "Hello gamers!"
 puts "Choose your weapon!"
 
-#user_move = gets.chomp
-user_move = "Paper"
+user_move = gets.chomp
+#lllll user_move = "Paper"
 
 possible_moves = ["Rock", "Paper", "Scissors"]
 
@@ -12,35 +12,30 @@ puts computer_move
 if user_move == "Paper"
   if computer_move == "Rock"
     puts "You win!"
-  end
-  if computer_move == "Paper"
+  elsif computer_move == "Paper"
     puts "It's a tie!"
-  end
-  if computer_move == "Scissors"
+  else 
     puts "You lose!"
   end
-end
 
-if user_move == "Scissors"
+elsif user_move == "Scissors"
   if computer_move == "Paper"
     puts "You win!"
-  end
-  if computer_move == "Scissors"
+  elsif computer_move == "Scissors"
     puts "It's a tie!"
-  end
-  if computer_move == "Rock"
+  else
     puts "You lose!"
   end
-end
 
-if user_move == "Rock"
+elsif user_move == "Rock"
   if computer_move == "Scissors"
     puts "You win!"
-  end
-  if computer_move == "Rock"
+  elsif computer_move == "Rock"
     puts "It's a tie!"
-  end
-  if computer_move == "Paper"
+  else
     puts "You lose!"
   end
+
+else
+  puts "Invalid move"
 end
